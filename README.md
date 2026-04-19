@@ -1,16 +1,33 @@
-# React + Vite
+# React Post Project 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+פרויקט תרגול ב-React המציג שימוש בקומפוננטות, Props וניהול State לעדכון תוכן בזמן אמת.
 
-Currently, two official plugins are available:
+## תיאור הפרויקט
+באפליקציה זו יצרתי קומפוננטה בשם `Post` המציגה פוסטים של משתמשים. 
+הפרויקט מדגים:
+- **העברת נתונים:** שימוש ב-Props להצגת שם הכותב ותוכן הפוסט.
+- **עדכון דינמי:** שימוש ב-Hook של `useState` כדי לעדכן את תוכן הפוסט על המסך מיד עם ההקלדה בתיבת הקלט.
+- **עיצוב מודולרי:** שימוש ב-CSS Modules ליצירת עיצוב ייחודי ומבודד לקומפוננטה.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## מבנה הקבצים העיקרי
+- `src/App.jsx`: קומפוננטת האב המציגה 3 פוסטים שונים עם נתונים ייחודיים.
+- `src/components/Post.jsx`: קומפוננטת הפוסט הכוללת את הלוגיקה, ה-State וה-Event Handlers.
+- `src/components/Post.module.css`: עיצוב הקומפוננטה המשתמש ב-Flexbox וצבעים מותאמים.
 
-## React Compiler
+## איך מפעילים את הפרויקט?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+כדי להריץ את הפרויקט אצלכם במחשב, יש לעקוב אחרי הצעדים הבאים:
 
-## Expanding the ESLint configuration
+1. **התקנת התלויות (Dependencies):**
+   פתחו את הטרמינל בתיקיית הפרויקט והריצו:
+   ```bash
+   npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+   הרצת שרת הפיתוח:
+לאחר סיום ההתקנה, הריצו:
+
+Bash
+npm run dev
+צפייה בדפדפן:
+לחצו על הקישור שיופיע בטרמינל (בדרך כלל http://localhost:5173).
