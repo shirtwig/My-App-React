@@ -1,0 +1,42 @@
+
+.container{
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  Display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 253, 229);
+}
+
+.name {
+  font-size: 35px;
+  font-family:fantasy;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  color: var(--text-h);
+  color: cadetblue;
+
+}
+
+.content {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  line-height: 145%;
+  letter-spacing: 0.18px;
+  margin: 0;
+  color: var(--text);
+  color:tomato;
+}
+
+.input {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: cadetblue;
+}
