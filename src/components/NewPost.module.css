@@ -1,0 +1,98 @@
+/* העטיפה של הטופס - מופיעה כחלונית מודאלית */
+.model {
+  width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: rgb(255, 253, 229); /* אותו רקע צהבהב עדין */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* מזיז אותו חזרה בדיוק לאמצע */
+  z-index: 1001; /* כדי שיהיה מעל הרקע הכהה */
+  border: 1px solid cadetblue;
+}
+
+.title {
+  font-family: fantasy;
+  color: cadetblue;
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid tomato;
+  padding-bottom: 5px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formGroup label {
+  font-family: 'Lucida Sans', sans-serif;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+/* עיצוב השדות - אינפוט וטקסט-אריאה */
+.input, .textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Lucida Sans', sans-serif;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus, .textarea:focus {
+  border-color: tomato;
+}
+
+.textarea {
+  resize: none; /* מונע מהמשתמש לשנות את גודל התיבה ידנית */
+}
+
+/* קבוצת הכפתורים */
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.submitButton {
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #4682b4; /* כחול מעט כהה יותר */
+}
+
+.cancelButton {
+  background-color: transparent;
+  color: tomato;
+  border: 1px solid tomato;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancelButton:hover {
+  background-color: tomato;
+  color: white;
+}
